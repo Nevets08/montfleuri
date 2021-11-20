@@ -1,0 +1,69 @@
+.hero-banner {
+  height: 100vh;
+  background-image: url(/assets/img/bubble.png), url(/assets/img/corners.png);
+
+  .logo {
+    position: absolute;
+    left: 55px;
+    top: 55px;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    nav {
+      display: flex;
+      align-items: center;
+      a {
+        text-transform: uppercase;
+        font-size: 10px;
+        &:not(:last-child) {
+          margin-right: 65px;
+        }
+        .logo-menu {
+          margin-top: 40px;
+        }
+      }
+    }
+    height: 20vh;
+  }
+
+  .container-text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 100%;
+    .text-center {
+      text-align: center;
+
+      p {
+        width: 40%;
+        // text-align: left;
+      }
+
+      .line {
+        background: $mainColor;
+        height: 2px;
+        width: 280px;
+        margin: auto;
+        margin-top: 19px;
+        margin-bottom: 30px;
+      }
+
+      a {
+        text-transform: uppercase;
+        font-family: Oswald;
+        font-weight: lighter;
+        letter-spacing: 4px;
+        font-size: 23px;
+        // clip-path: url(#buttonDiscover);
+      }
+    }
+  }
+
+  .scroll-button {
+    height: 20vh;
+  }
+}

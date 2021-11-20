@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Merriweather, Oswald;
+  color: #CBBBA0;
+}
+
+.hero-banner {
+  height: 100vh;
+  background-image: url(/assets/img/bubble.png), url(/assets/img/corners.png);
+}
+
+.hero-banner .logo {
+  position: absolute;
+  left: 55px;
+  top: 55px;
+}
+
+.hero-banner header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 20vh;
+}
+
+.hero-banner header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-banner header nav a {
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.hero-banner header nav a:not(:last-child) {
+  margin-right: 65px;
+}
+
+.hero-banner header nav a .logo-menu {
+  margin-top: 40px;
+}
+
+.hero-banner .container-text-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60vh;
+  width: 100%;
+}
+
+.hero-banner .container-text-center .text-center {
+  text-align: center;
+}
+
+.hero-banner .container-text-center .text-center p {
+  width: 40%;
+}
+
+.hero-banner .container-text-center .text-center .line {
+  background: #CBBBA0;
+  height: 2px;
+  width: 280px;
+  margin: auto;
+  margin-top: 19px;
+  margin-bottom: 30px;
+}
+
+.hero-banner .container-text-center .text-center a {
+  text-transform: uppercase;
+  font-family: Oswald;
+  font-weight: lighter;
+  letter-spacing: 4px;
+  font-size: 23px;
+}
+
+.hero-banner .scroll-button {
+  height: 20vh;
+}
+
+h2 {
+  font-size: 28px;
+  text-transform: uppercase;
+  font-family: Merriweather;
+}
+
+p {
+  font-size: 19px;
+  font-family: Oswald;
+}
+/*# sourceMappingURL=style.css.map */
