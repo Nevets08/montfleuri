@@ -67,6 +67,8 @@
 }
 
 .hero-banner .container-text-center .text-center p {
+  width: 40%;
+  margin: 0 auto;
   margin-bottom: 32px;
 }
 
@@ -155,6 +157,10 @@ main #recipe .recipe-content-container {
 main #recipe .recipe-content-container .recipe-content-left, main #recipe .recipe-content-container .recipe-content-right {
   text-align: center;
   width: 30%;
+}
+
+main #recipe .recipe-content-container .recipe-content-left {
+  margin-right: 5%;
 }
 
 .align-right {
