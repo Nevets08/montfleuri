@@ -1,12 +1,6 @@
 .hero-banner {
   height: 100vh;
-  background-image: url(/assets/img/bubble.png), url(/assets/img/corners.png);
-
-  .logo {
-    position: absolute;
-    left: 55px;
-    top: 55px;
-  }
+  background-image: url(/assets/img/bubble.png);
 
   header {
     display: flex;
@@ -26,9 +20,8 @@
         }
       }
     }
-    height: 10vh;
   }
-
+  
   .container-text-center {
     display: flex;
     justify-content: center;
@@ -39,8 +32,9 @@
       text-align: center;
 
       p {
-        width: 40%;
+        // width: 40%;
         // text-align: left;
+        margin-bottom: 32px;
       }
 
       .line {
@@ -50,15 +44,6 @@
         margin: auto;
         margin-top: 19px;
         margin-bottom: 30px;
-      }
-
-      a {
-        text-transform: uppercase;
-        font-family: Oswald;
-        font-weight: lighter;
-        letter-spacing: 4px;
-        font-size: 23px;
-        // clip-path: url(#buttonDiscover);
       }
     }
   }

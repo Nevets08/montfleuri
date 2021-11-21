@@ -1,0 +1,66 @@
+main {
+  background: #121212;
+  #products {
+    padding: 180px 0;
+    .product-container {
+      border: 6px solid $mainColor;
+      padding: 0 70px;
+      width: 40%;
+      text-align: center;
+
+      span {
+        font-size: 40px;
+        display: block;
+      }
+    }
+  }
+
+  #recipe {
+    .title-recipe {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      margin-bottom: 120px;
+
+      h2 {
+        position: absolute;
+        top: 37%;
+      }
+    }
+
+    .recipe-content-container {
+        display: flex;
+        justify-content: center;
+
+        .recipe-content-left, .recipe-content-right {
+            text-align: center;
+            width: 30%;
+        }
+    }
+  }
+}
+
+.align-right {
+  display: flex;
+  justify-content: end;
+}
+
+.align-left {
+  display: flex;
+  justify-content: baseline;
+}
+
+.recipe-content-container,
+#products {
+  h3 {
+    border-top: 2px solid $mainColor;
+    border-bottom: 2px solid $mainColor;
+    padding: 15px 0;
+  }
+
+  p {
+    padding: 45px 0;
+    border-bottom: 2px solid $mainColor;
+    margin-bottom: 17px;
+  }
+}

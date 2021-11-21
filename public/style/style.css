@@ -6,17 +6,12 @@
           box-sizing: border-box;
   font-family: Merriweather, Oswald;
   color: #CBBBA0;
+  scroll-behavior: smooth;
 }
 
 .hero-banner {
   height: 100vh;
-  background-image: url(/assets/img/bubble.png), url(/assets/img/corners.png);
-}
-
-.hero-banner .logo {
-  position: absolute;
-  left: 55px;
-  top: 55px;
+  background-image: url(/assets/img/bubble.png);
 }
 
 .hero-banner header {
@@ -29,7 +24,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 10vh;
 }
 
 .hero-banner header nav {
@@ -73,7 +67,7 @@
 }
 
 .hero-banner .container-text-center .text-center p {
-  width: 40%;
+  margin-bottom: 32px;
 }
 
 .hero-banner .container-text-center .text-center .line {
@@ -83,14 +77,6 @@
   margin: auto;
   margin-top: 19px;
   margin-bottom: 30px;
-}
-
-.hero-banner .container-text-center .text-center a {
-  text-transform: uppercase;
-  font-family: Oswald;
-  font-weight: lighter;
-  letter-spacing: 4px;
-  font-size: 23px;
 }
 
 .hero-banner .scroll-button {
@@ -121,7 +107,101 @@
   font-weight: lighter;
 }
 
+main {
+  background: #121212;
+}
+
+main #products {
+  padding: 180px 0;
+}
+
+main #products .product-container {
+  border: 6px solid #CBBBA0;
+  padding: 0 70px;
+  width: 40%;
+  text-align: center;
+}
+
+main #products .product-container span {
+  font-size: 40px;
+  display: block;
+}
+
+main #recipe .title-recipe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  margin-bottom: 120px;
+}
+
+main #recipe .title-recipe h2 {
+  position: absolute;
+  top: 37%;
+}
+
+main #recipe .recipe-content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #recipe .recipe-content-container .recipe-content-left, main #recipe .recipe-content-container .recipe-content-right {
+  text-align: center;
+  width: 30%;
+}
+
+.align-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.align-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+}
+
+.recipe-content-container h3,
+#products h3 {
+  border-top: 2px solid #CBBBA0;
+  border-bottom: 2px solid #CBBBA0;
+  padding: 15px 0;
+}
+
+.recipe-content-container p,
+#products p {
+  padding: 45px 0;
+  border-bottom: 2px solid #CBBBA0;
+  margin-bottom: 17px;
+}
+
+.fixed-logo {
+  position: fixed;
+  left: 55px;
+  top: 55px;
+}
+
 h2 {
+  color: #000000;
+  font-size: 37px;
+  text-transform: uppercase;
+}
+
+h3 {
   font-size: 28px;
   text-transform: uppercase;
   font-family: Merriweather;
@@ -130,5 +210,17 @@ h2 {
 p {
   font-size: 19px;
   font-family: Oswald;
+}
+
+.discover-button {
+  text-transform: uppercase;
+  font-family: Oswald;
+  font-weight: lighter;
+  letter-spacing: 4px;
+  font-size: 23px;
+}
+
+section {
+  margin: 0 15%;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,5 @@
+// Style général
+
 @import "variable";
 
 * {
@@ -7,17 +9,44 @@
   box-sizing: border-box;
   font-family: Merriweather, Oswald;
   color: $mainColor;
+  scroll-behavior: smooth;
 }
 
 @import "hero-banner";
+@import "main";
+
+.fixed-logo {
+  position: fixed;
+  left: 55px;
+  top: 55px;
+}
 
 h2 {
+  color: #000000;
+  font-size: 37px;
+  text-transform: uppercase;
+}
+
+h3 {
   font-size: 28px;
   text-transform: uppercase;
   font-family: Merriweather;
 }
 
 p {
-    font-size: 19px;
-    font-family: Oswald;
+  font-size: 19px;
+  font-family: Oswald;
+}
+
+.discover-button {
+  text-transform: uppercase;
+  font-family: Oswald;
+  font-weight: lighter;
+  letter-spacing: 4px;
+  font-size: 23px;
+  // clip-path: url(#buttonDiscover);
+}
+
+section {
+  margin: 0 15%;
 }
