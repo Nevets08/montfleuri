@@ -29,42 +29,94 @@ main {
     }
 
     .recipe-content-container {
-        display: flex;
-        justify-content: center;
+      display: flex;
+      justify-content: center;
 
-        .recipe-content-left, .recipe-content-right {
-            text-align: center;
-            width: 30%;
-        }
+      .recipe-content-left,
+      .recipe-content-right {
+        text-align: center;
+        width: 30%;
+      }
 
-        .recipe-content-left {
-            margin-right: 5%;
-        }
+      .recipe-content-left {
+        margin-right: 5%;
+      }
     }
   }
-}
 
-.align-right {
-  display: flex;
-  justify-content: end;
-}
+  #degustation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/assets/img/recipe-bg.svg);
+    margin: 0;
+    padding: 10% 15%;
+    .degustation-left {
+      width: 50%;
 
-.align-left {
-  display: flex;
-  justify-content: baseline;
-}
+      p {
+        font-size: 24px;
+        color: #000;
+        font-weight: lighter;
+      }
 
-.recipe-content-container,
-#products {
-  h3 {
-    border-top: 2px solid $mainColor;
-    border-bottom: 2px solid $mainColor;
-    padding: 15px 0;
+      img {
+        transform: translate(60%, 80%);
+      }
+    }
+
+    .degustation-right {
+      display: flex;
+      justify-content: center;
+      width: 50%;
+      margin-top: 15%;
+
+      i {
+        color: #000;
+        font-size: 50px;
+      }
+
+      .degustation-inside-right {
+        a,
+        p {
+          color: #000;
+          font-family: Oswald;
+          font-size: 20px;
+        }
+
+        h4 {
+          margin-bottom: 20px;
+        }
+      }
+
+      .degustation-inside-left {
+        margin-right: 30px;
+      }
+    }
   }
 
-  p {
-    padding: 45px 0;
-    border-bottom: 2px solid $mainColor;
-    margin-bottom: 17px;
+  .align-right {
+    display: flex;
+    justify-content: end;
+  }
+
+  .align-left {
+    display: flex;
+    justify-content: baseline;
+  }
+
+  .recipe-content-container,
+  #products {
+    h3 {
+      border-top: 2px solid $mainColor;
+      border-bottom: 2px solid $mainColor;
+      padding: 15px 0;
+    }
+
+    p {
+      padding: 45px 0;
+      border-bottom: 2px solid $mainColor;
+      margin-bottom: 17px;
+    }
   }
 }

@@ -1,0 +1,50 @@
+#contact {
+  background: url(/assets/img/contact-bg.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 10% 15%;
+  .contact-left {
+    width: 50%;
+    p {
+      font-size: 24px;
+      font-weight: lighter;
+      margin-bottom: 50px;
+    }
+  }
+  .contact-right {
+    width: 45%;
+    form {
+        margin-top: 30%;
+      input,
+      textarea {
+        background: none;
+        width: 100%;
+        display: block;
+        outline: none;
+        border: none;
+        border-bottom: 2px solid $mainColor;
+        color: $mainColor;
+        margin-top: 24px;
+        padding-bottom: 8px;
+        font-size: 20px;
+        font-family: Oswald;
+      }
+
+      textarea::placeholder, input::placeholder {
+          color: $mainColor;
+      }
+
+      input[type=submit] {
+          border: none;
+          text-align: left;
+      }
+    }
+  }
+
+  .big-title, span {
+      color: $mainColor;
+  }
+}
+
