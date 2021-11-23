@@ -75,17 +75,29 @@
   }
 }
 
+.mobile-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3%;
+
+  i {
+    font-size: 30px;
+    margin-left: 10%;
+  }
+}
+
 // RESPONSIVE
 
 @media (max-width: $breakpoint-tablet) {
-  header {
-    display: none;
-  }
-
   .fixed-logo {
     display: none;
   }
   .hero-banner {
+    header {
+      display: none !important;
+    }
+
     .container-text-center {
       p {
         width: 80% !important;
@@ -101,5 +113,11 @@
         width: 90% !important;
       }
     }
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .mobile-header {
+    display: none;
   }
 }
