@@ -1,8 +1,7 @@
 #contact {
-  background: url(/assets/img/contact-bg.jpg);
+  background: url(/assets/img/contact-bg.jpg) no-repeat;
   display: flex;
   justify-content: center;
-  align-items: center;
   margin: 0;
   padding: 10% 15%;
   .contact-left {
@@ -16,7 +15,7 @@
   .contact-right {
     width: 45%;
     form {
-        margin-top: 30%;
+        margin-top: 15%;
       input,
       textarea {
         background: none;

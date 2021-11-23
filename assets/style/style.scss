@@ -15,6 +15,7 @@
 @import "hero-banner";
 @import "main";
 @import "contact";
+@import "footer";
 
 .fixed-logo {
   position: fixed;
@@ -61,10 +62,6 @@ p {
   letter-spacing: 4px;
   font-size: 23px;
   // clip-path: url(#buttonDiscover);
-}
-
-section {
-  margin: 0 15%;
 }
 
 .strong {

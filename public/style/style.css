@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +12,7 @@
 
 .hero-banner {
   height: 100vh;
-  background-image: url(/assets/img/bubble.png);
+  background-image: url(/assets/img/bubble.png), url(/assets/img/corners.svg);
 }
 
 .hero-banner header {
@@ -33,6 +34,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .hero-banner header nav a {
@@ -41,7 +45,7 @@
 }
 
 .hero-banner header nav a:not(:last-child) {
-  margin-right: 65px;
+  margin-right: 3vw;
 }
 
 .hero-banner header nav a .logo-menu {
@@ -103,10 +107,20 @@
   font-size: 13px;
 }
 
-.hero-banner .scroll-button .scroll .arrow {
+.hero-banner .scroll-button .arrow {
   font-family: Oswald;
   font-size: 20px;
   font-weight: lighter;
+}
+
+.hero-banner .scroll-button a {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.hero-banner .scroll-button a:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 main {
@@ -114,7 +128,9 @@ main {
 }
 
 main #products {
-  padding: 180px 0;
+  background: url(/assets/img/beer-cpas.png) no-repeat, url(/assets//img/beer-caps-products.png) no-repeat, url(/assets/img/produits.png) no-repeat, url(/assets//img/pattern-logo.png) no-repeat, url(/assets//img/beer_glass_low.png) no-repeat, url(/assets/img/carte-postal.png) no-repeat, url(/assets/img/Beer-Cap-Mockup.png) no-repeat, url(/assets/img/photos-souvenir-right.png) no-repeat;
+  background-position: -40px 180px, 115% 180px, -120px -50px, 110% 43%, 113% 33%, -23% 68%, -5% 85%, 105% 90%;
+  padding: 180px 15%;
 }
 
 main #products .product-container {
@@ -127,6 +143,17 @@ main #products .product-container {
 main #products .product-container span {
   font-size: 40px;
   display: block;
+}
+
+main #products .align-left {
+  margin-top: 75%;
+}
+
+main #recipe {
+  background: url(/assets/img/houblon.png) no-repeat, url(/assets/img/blé.png) no-repeat;
+  background-position: -17% 0, 165% 0;
+  padding-top: 16%;
+  padding-bottom: 16%;
 }
 
 main #recipe .title-recipe {
@@ -157,7 +184,7 @@ main #recipe .recipe-content-container {
 main #recipe .recipe-content-container .recipe-content-left,
 main #recipe .recipe-content-container .recipe-content-right {
   text-align: center;
-  width: 30%;
+  width: 20%;
 }
 
 main #recipe .recipe-content-container .recipe-content-left {
@@ -174,7 +201,8 @@ main #degustation {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url(/assets/img/recipe-bg.svg);
+  background: url(/assets/img/beer-caps.png) no-repeat, url(/assets/img/opener.png) no-repeat, url(/assets/img/recipe-bg.svg) no-repeat;
+  background-position: 50% -9%, 1% 85%, 0 0;
   margin: 0;
   padding: 10% 15%;
 }
@@ -189,9 +217,9 @@ main #degustation .degustation-left p {
   font-weight: lighter;
 }
 
-main #degustation .degustation-left img {
-  -webkit-transform: translate(60%, 80%);
-          transform: translate(60%, 80%);
+main #degustation .degustation-left img:first-child {
+  -webkit-transform: translate(50%, 95%);
+          transform: translate(50%, 95%);
 }
 
 main #degustation .degustation-right {
@@ -258,16 +286,13 @@ main #products p {
 }
 
 #contact {
-  background: url(/assets/img/contact-bg.jpg);
+  background: url(/assets/img/contact-bg.jpg) no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: 0;
   padding: 10% 15%;
 }
@@ -287,7 +312,7 @@ main #products p {
 }
 
 #contact .contact-right form {
-  margin-top: 30%;
+  margin-top: 15%;
 }
 
 #contact .contact-right form input,
@@ -328,6 +353,80 @@ main #products p {
 
 #contact .big-title, #contact span {
   color: #CBBBA0;
+}
+
+footer {
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 414px;
+}
+
+footer .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 24px;
+}
+
+footer .social-media i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100%;
+  border: 1px solid #CBBBA0;
+  height: 35px;
+  width: 35px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+footer .social-media i:not(:last-child) {
+  margin-right: 20px;
+}
+
+footer .social-media i:hover {
+  background: #CBBBA0;
+  color: #000;
+}
+
+footer nav {
+  margin-bottom: 20px;
+}
+
+footer nav a {
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+footer nav a:not(:last-child) {
+  border-right: 1px solid #CBBBA0;
+  padding-right: 23px;
+}
+
+footer nav a:not(:first-child) {
+  padding-left: 23px;
+}
+
+footer p {
+  font-size: 10px;
 }
 
 .fixed-logo {
@@ -374,10 +473,6 @@ p {
   font-weight: lighter;
   letter-spacing: 4px;
   font-size: 23px;
-}
-
-section {
-  margin: 0 15%;
 }
 
 .strong {

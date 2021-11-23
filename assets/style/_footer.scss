@@ -1,0 +1,52 @@
+footer {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 414px;
+  .social-media {
+    display: flex;
+    margin-bottom: 24px;
+    i {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      border: 1px solid $mainColor;
+      height: 35px;
+      width: 35px;
+      transition: 0.3s;
+
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+
+      &:hover {
+        background: $mainColor;
+        color: #000;
+      }
+    }
+  }
+
+  nav {
+      margin-bottom: 20px;
+    a {
+      text-transform: uppercase;
+      font-size: 13px;
+
+      &:not(:last-child) {
+        border-right: 1px solid $mainColor;
+        padding-right: 23px;
+      }
+
+      &:not(:first-child) {
+        padding-left: 23px;
+      }
+    }
+  }
+
+  p {
+    font-size: 10px;
+  }
+}

@@ -1,7 +1,17 @@
 main {
   background: #121212;
   #products {
-    padding: 180px 0;
+    background: url(/assets/img/beer-cpas.png) no-repeat,
+      url(/assets//img/beer-caps-products.png) no-repeat,
+      url(/assets/img/produits.png) no-repeat,
+      url(/assets//img/pattern-logo.png) no-repeat,
+      url(/assets//img/beer_glass_low.png) no-repeat,
+      url(/assets/img/carte-postal.png) no-repeat,
+      url(/assets/img/Beer-Cap-Mockup.png) no-repeat,
+      url(/assets/img/photos-souvenir-right.png) no-repeat;
+    background-position: -40px 180px, 115% 180px, -120px -50px, 110% 43%,
+      113% 33%, -23% 68%, -5% 85%, 105% 90%;
+    padding: 180px 15%;
     .product-container {
       border: 6px solid $mainColor;
       padding: 0 70px;
@@ -13,9 +23,17 @@ main {
         display: block;
       }
     }
+    .align-left {
+      margin-top: 75%;
+    }
   }
 
   #recipe {
+    background: url(/assets/img/houblon.png) no-repeat,
+      url(/assets/img/blé.png) no-repeat;
+    background-position: -17% 0, 165% 0;
+    padding-top: 16%;
+    padding-bottom: 16%;
     .title-recipe {
       display: flex;
       justify-content: center;
@@ -35,7 +53,7 @@ main {
       .recipe-content-left,
       .recipe-content-right {
         text-align: center;
-        width: 30%;
+        width: 20%;
       }
 
       .recipe-content-left {
@@ -48,7 +66,10 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(/assets/img/recipe-bg.svg);
+    background: url(/assets/img/beer-caps.png) no-repeat,
+      url(/assets/img/opener.png) no-repeat,
+      url(/assets/img/recipe-bg.svg) no-repeat;
+    background-position: 50% -9%, 1% 85%, 0 0;
     margin: 0;
     padding: 10% 15%;
     .degustation-left {
@@ -61,7 +82,9 @@ main {
       }
 
       img {
-        transform: translate(60%, 80%);
+        &:first-child {
+          transform: translate(50%, 95%);
+        }
       }
     }
 

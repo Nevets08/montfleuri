@@ -1,6 +1,6 @@
 .hero-banner {
   height: 100vh;
-  background-image: url(/assets/img/bubble.png);
+  background-image: url(/assets/img/bubble.png), url(/assets/img/corners.svg);
 
   header {
     display: flex;
@@ -9,11 +9,12 @@
     nav {
       display: flex;
       align-items: center;
+      justify-content: center;
       a {
         text-transform: uppercase;
         font-size: 10px;
         &:not(:last-child) {
-          margin-right: 65px;
+          margin-right: 3vw;
         }
         .logo-menu {
           margin-top: 40px;
@@ -58,10 +59,17 @@
     .scroll {
       margin-top: 11px;
       font-size: 13px;
-      .arrow {
-        font-family: Oswald;
-        font-size: 20px;
-        font-weight: lighter;
+    }
+    .arrow {
+      font-family: Oswald;
+      font-size: 20px;
+      font-weight: lighter;
+    }
+
+    a {
+      transition: 0.5s;
+      &:hover {
+        transform: rotate(360deg);
       }
     }
   }
