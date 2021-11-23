@@ -15,7 +15,7 @@
   .contact-right {
     width: 45%;
     form {
-        margin-top: 15%;
+      margin-top: 15%;
       input,
       textarea {
         background: none;
@@ -31,19 +31,47 @@
         font-family: Oswald;
       }
 
-      textarea::placeholder, input::placeholder {
-          color: $mainColor;
+      textarea::placeholder,
+      input::placeholder {
+        color: $mainColor;
       }
 
-      input[type=submit] {
-          border: none;
-          text-align: left;
+      input[type="submit"] {
+        border: none;
+        text-align: left;
       }
     }
   }
 
-  .big-title, span {
-      color: $mainColor;
+  .big-title,
+  span {
+    color: $mainColor;
   }
 }
 
+// RESPONSIVE
+
+@media (max-width: $breakpoint-tablet) {
+  #contact {
+    .contact-right {
+      margin-left: 5%;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  #contact {
+    flex-direction: column;
+    .contact-right {
+      width: 100%;
+    }
+
+    .contact-left {
+      width: 100%;
+
+      h2.big-title {
+        font-size: 50px;
+      }
+    }
+  }
+}

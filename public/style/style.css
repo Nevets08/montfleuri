@@ -6,7 +6,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: Merriweather, Oswald;
-  color: #CBBBA0;
+  color: #cbbba0;
   scroll-behavior: smooth;
 }
 
@@ -77,7 +77,7 @@
 }
 
 .hero-banner .container-text-center .text-center .line {
-  background: #CBBBA0;
+  background: #cbbba0;
   height: 2px;
   width: 280px;
   margin: auto;
@@ -86,13 +86,13 @@
 }
 
 .hero-banner .scroll-button {
-  height: 20vh;
+  height: 5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -123,6 +123,24 @@
           transform: rotate(360deg);
 }
 
+@media (max-width: 768px) {
+  header {
+    display: none;
+  }
+  .fixed-logo {
+    display: none;
+  }
+  .hero-banner .container-text-center p {
+    width: 80% !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-banner .container-text-center p {
+    width: 90% !important;
+  }
+}
+
 main {
   background: #121212;
 }
@@ -134,7 +152,7 @@ main #products {
 }
 
 main #products .product-container {
-  border: 6px solid #CBBBA0;
+  border: 6px solid #cbbba0;
   padding: 0 70px;
   width: 40%;
   text-align: center;
@@ -273,16 +291,106 @@ main .align-left {
 
 main .recipe-content-container h3,
 main #products h3 {
-  border-top: 2px solid #CBBBA0;
-  border-bottom: 2px solid #CBBBA0;
+  border-top: 2px solid #cbbba0;
+  border-bottom: 2px solid #cbbba0;
   padding: 15px 0;
 }
 
 main .recipe-content-container p,
 main #products p {
   padding: 45px 0;
-  border-bottom: 2px solid #CBBBA0;
+  border-bottom: 2px solid #cbbba0;
   margin-bottom: 17px;
+}
+
+@media (max-width: 1440px) {
+  main #products {
+    background-position: 64px 180px, -40% 632px, 335px -273px, 120% 55%, -765% 50%, 500% 68%, -1% 100%, 345% 113% !important;
+  }
+  main #recipe {
+    background-position: -50% 0, 300% 0;
+  }
+  main #degustation {
+    background-position: 50% -9%, -8% 110%, 0 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main #degustation .degustation-left {
+    width: 100%;
+  }
+  main #degustation .degustation-right {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  #products {
+    background-position: -40px 0px, 0% 0px, -0px -50px, 0% 55%, 3% 4 2%, -0% 68%, -5% 85%, 0% 100% !important;
+  }
+  #products .product-container {
+    width: 100% !important;
+  }
+  #recipe {
+    background-position: 536% 61%, 351% 0 !important;
+  }
+  #recipe .recipe-content-container .recipe-content-left,
+  #recipe .recipe-content-container .recipe-content-right {
+    text-align: center;
+    width: 30% !important;
+  }
+}
+
+@media (max-width: 480px) {
+  #products .product-container {
+    padding: 0 20px !important;
+  }
+  #recipe {
+    background-position: 536% 61%, 351% 0 !important;
+  }
+  #recipe .title-recipe {
+    margin-bottom: 10px !important;
+  }
+  #recipe .recipe-content-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #recipe .recipe-content-container .recipe-content-left,
+  #recipe .recipe-content-container .recipe-content-right {
+    text-align: center;
+    width: 80% !important;
+  }
+  #recipe .recipe-content-container .recipe-content-left {
+    margin-right: 0 !important;
+    margin-bottom: 50px;
+  }
+  #degustation {
+    background-position: 50% -9%, 1300% 108%, 0px 0 !important;
+  }
+  #degustation .degustation-left {
+    margin-top: 30%;
+  }
+  #degustation .degustation-left h2.big-title {
+    font-size: 50px;
+  }
+  #degustation .degustation-left img:first-child {
+    -webkit-transform: translate(10%, 9%) !important;
+            transform: translate(10%, 9%) !important;
+  }
+  #degustation .degustation-right {
+    margin-top: 10% !important;
+  }
 }
 
 #contact {
@@ -322,37 +430,66 @@ main #products p {
   display: block;
   outline: none;
   border: none;
-  border-bottom: 2px solid #CBBBA0;
-  color: #CBBBA0;
+  border-bottom: 2px solid #cbbba0;
+  color: #cbbba0;
   margin-top: 24px;
   padding-bottom: 8px;
   font-size: 20px;
   font-family: Oswald;
 }
 
-#contact .contact-right form textarea::-webkit-input-placeholder, #contact .contact-right form input::-webkit-input-placeholder {
-  color: #CBBBA0;
+#contact .contact-right form textarea::-webkit-input-placeholder,
+#contact .contact-right form input::-webkit-input-placeholder {
+  color: #cbbba0;
 }
 
-#contact .contact-right form textarea:-ms-input-placeholder, #contact .contact-right form input:-ms-input-placeholder {
-  color: #CBBBA0;
+#contact .contact-right form textarea:-ms-input-placeholder,
+#contact .contact-right form input:-ms-input-placeholder {
+  color: #cbbba0;
 }
 
-#contact .contact-right form textarea::-ms-input-placeholder, #contact .contact-right form input::-ms-input-placeholder {
-  color: #CBBBA0;
+#contact .contact-right form textarea::-ms-input-placeholder,
+#contact .contact-right form input::-ms-input-placeholder {
+  color: #cbbba0;
 }
 
-#contact .contact-right form textarea::placeholder, #contact .contact-right form input::placeholder {
-  color: #CBBBA0;
+#contact .contact-right form textarea::placeholder,
+#contact .contact-right form input::placeholder {
+  color: #cbbba0;
 }
 
-#contact .contact-right form input[type=submit] {
+#contact .contact-right form input[type="submit"] {
   border: none;
   text-align: left;
 }
 
-#contact .big-title, #contact span {
-  color: #CBBBA0;
+#contact .big-title,
+#contact span {
+  color: #cbbba0;
+}
+
+@media (max-width: 768px) {
+  #contact .contact-right {
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  #contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contact .contact-right {
+    width: 100%;
+  }
+  #contact .contact-left {
+    width: 100%;
+  }
+  #contact .contact-left h2.big-title {
+    font-size: 50px;
+  }
 }
 
 footer {
@@ -391,7 +528,7 @@ footer .social-media i {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 100%;
-  border: 1px solid #CBBBA0;
+  border: 1px solid #cbbba0;
   height: 35px;
   width: 35px;
   -webkit-transition: 0.3s;
@@ -403,7 +540,7 @@ footer .social-media i:not(:last-child) {
 }
 
 footer .social-media i:hover {
-  background: #CBBBA0;
+  background: #cbbba0;
   color: #000;
 }
 
@@ -417,7 +554,7 @@ footer nav a {
 }
 
 footer nav a:not(:last-child) {
-  border-right: 1px solid #CBBBA0;
+  border-right: 1px solid #cbbba0;
   padding-right: 23px;
 }
 
@@ -427,6 +564,19 @@ footer nav a:not(:first-child) {
 
 footer p {
   font-size: 10px;
+}
+
+@media (max-width: 768px) {
+  footer nav {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  footer p {
+    text-align: center;
+    width: 80%;
+  }
 }
 
 .fixed-logo {

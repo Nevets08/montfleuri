@@ -51,9 +51,9 @@
   }
 
   .scroll-button {
-    height: 20vh;
+    height: 5vh;
     display: flex;
-    justify-content: center;
+    justify-content: baseline;
     align-items: center;
     flex-direction: column;
     .scroll {
@@ -70,6 +70,35 @@
       transition: 0.5s;
       &:hover {
         transform: rotate(360deg);
+      }
+    }
+  }
+}
+
+// RESPONSIVE
+
+@media (max-width: $breakpoint-tablet) {
+  header {
+    display: none;
+  }
+
+  .fixed-logo {
+    display: none;
+  }
+  .hero-banner {
+    .container-text-center {
+      p {
+        width: 80% !important;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .hero-banner {
+    .container-text-center {
+      p {
+        width: 90% !important;
       }
     }
   }

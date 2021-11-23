@@ -143,3 +143,106 @@ main {
     }
   }
 }
+
+// RESPONSIVE
+
+@media (max-width: $breakpoint-desktop) {
+  main {
+    #products {
+      background-position: 64px 180px, -40% 632px, 335px -273px, 120% 55%,
+        -765% 50%, 500% 68%, -1% 100%, 345% 113% !important;
+    }
+
+    #recipe {
+      background-position: -50% 0, 300% 0;
+    }
+
+    #degustation {
+      background-position: 50% -9%, -8% 110%, 0 0;
+      flex-direction: column;
+
+      .degustation-left {
+        width: 100%;
+      }
+
+      .degustation-right {
+        width: 100%;
+        margin-top: 0;
+        margin-left: 40%;
+      }
+    }
+  }
+}
+
+// RESPONSIVE
+
+@media (max-width: $breakpoint-tablet) {
+  #products {
+    background-position: -40px 0px, 0% 0px, -0px -50px, 0% 55%, 3% 4 2%, -0% 68%,
+      -5% 85%, 0% 100% !important;
+    .product-container {
+      width: 100% !important;
+    }
+  }
+
+  #recipe {
+    background-position: 536% 61%, 351% 0 !important;
+    .recipe-content-container {
+      .recipe-content-left,
+      .recipe-content-right {
+        text-align: center;
+        width: 30% !important;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  #products {
+    .product-container {
+      padding: 0 20px !important;
+    }
+  }
+
+  #recipe {
+    .title-recipe {
+      margin-bottom: 10px !important;
+    }
+    background-position: 536% 61%, 351% 0 !important;
+    .recipe-content-container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .recipe-content-left,
+      .recipe-content-right {
+        text-align: center;
+        width: 80% !important;
+      }
+
+      .recipe-content-left {
+        margin-right: 0 !important;
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  #degustation {
+    background-position: 50% -9%, 1300% 108%, 0px 0 !important;
+    .degustation-left {
+      margin-top: 30%;
+      h2.big-title {
+        font-size: 50px;
+      }
+
+      img {
+        &:first-child {
+          transform: translate(10%, 9%) !important;
+        }
+      }
+    }
+
+    .degustation-right {
+      margin-top: 10% !important;
+    }
+  }
+}
