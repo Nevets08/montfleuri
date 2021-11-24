@@ -12,7 +12,8 @@
 
 .hero-banner {
   height: 100vh;
-  background-image: url(/assets/img/bubble.png), url(/assets/img/corners.svg);
+  background-image: url(/assets/img/bubble.png);
+  background-repeat: no-repeat;
 }
 
 .hero-banner header {
